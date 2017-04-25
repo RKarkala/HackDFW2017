@@ -7,12 +7,12 @@ CleanEarth.life allows users to understand how much of an impact they have on th
 These instructions will go over how to get the app up and running
 
 ### Prerequisites
-* To Install and Run:
-	* Maven
-	* Application Server (e.g. Websphere or Tomcat)
-* To Make Edits:
-	* JavaEE
-    * Vue.<span></span>js
+* To Install:
+	* [Maven](https://maven.apache.org/)
+	* Application Server (e.g. [Websphere](http://www-03.ibm.com/software/products/en/appserv-was) or [Tomcat](http://tomcat.apache.org))
+* To Make Edits and Compile:
+	* [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+    * [Vue.js](https://vuejs.org)
 
 ### Set Up
 
@@ -21,7 +21,7 @@ Firebase and PostgreSQL hosting must be setup for full functionality.
 * PostgreSQL - Set your DB Url to an environmental variable named 'JDBC_DATABASE_URL'
 
 
-### Installing and Running
+### Installing
 
 Open up Command Prompt or CMD equivalent
 
@@ -38,7 +38,6 @@ mvn clean install
 ```
 
 WAR file will be located at '\target\LoginProject-0.0.1-SNAPSHOT.war'  
-
 After WAR file is created, simply run it on whatever application server you use
 
 ### Editing
@@ -52,16 +51,17 @@ npm install
 ```
 npm run build
 ```
+* Copy the content of 'app\dist' to 'WebContent' and rebuild WAR
+
 
 Back End - Java JDK must be installed, no special instructions
 
-After any editis made, the WAR must be rebuilt
 
 ## Technology Used
 
 * [Vue.js](https://vuejs.org) - JavaScript Framework 
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [Java EE](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Backend
+* [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Backend
 * [Heroku](https://www.heroku.com) - Hosting 
 
 
